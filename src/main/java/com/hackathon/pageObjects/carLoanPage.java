@@ -85,6 +85,11 @@ public class carLoanPage extends BasePage{
 	@FindBy(xpath = "//*[@class=\"highcharts-container \"]" )
 	List<WebElement> chart;
 	
+	@FindBy(xpath = "//*[@id=\"leschemewrapper\"]/div/label")
+	WebElement emiSection;
+	
+	@FindBy(xpath = "//*[@class='btn-group btn-group-toggle add-check']/label")
+	List<WebElement> schemeButton;
 	public void originpage() {
 		driver.get("https://emicalculator.net/");
 	}
@@ -286,5 +291,17 @@ public class carLoanPage extends BasePage{
 		boolean result = chart.get(1).isDisplayed();
 		Assert.assertEquals(result, true);
 		System.out.println("Pi chart present..........");
+	}
+	public void schemeCheck() {
+		boolean result = emiSection.isDisplayed();
+		Assert.assertEquals(result, true);
+		System.out.println("Emi scheme availabele");
+	}
+	public void schemeButton() {
+		boolean result1 = schemeButton.get(0).isEnabled();
+		Assert.assertEquals(result1, true);
+		boolean result2 = schemeButton.get(1).isEnabled();
+		Assert.assertEquals(result2, true);
+		System.out.println("Both emi scheme button working....");
 	}
 }

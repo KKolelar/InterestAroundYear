@@ -28,3 +28,9 @@ Feature: Interest Amount Around Year Regression
   Scenario Outline: verify scale in Home Loan Calculator
     Given user navigate to home loan calculator
     Then verify all scale are working
+    
+  @regression
+  Scenario: verify emi scheme 
+  	Given user navigate to carloan calculator 
+  	Then verify emi scheme 
+  	And verify emi advance and arrears button

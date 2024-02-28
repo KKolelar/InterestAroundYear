@@ -3,6 +3,7 @@ package com.hackathon.testRunner;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
+//@RunWith(Cucumber.class)
 @CucumberOptions(features = { ".//Features/" }, // providing location of feature file in "features"
 		glue = "com.hackathon.stepDefinitions" // specifying stepDefinition package name
 		, plugin = { "pretty", // plugins to generate cucumber report

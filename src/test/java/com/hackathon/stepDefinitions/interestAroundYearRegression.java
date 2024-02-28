@@ -1,17 +1,25 @@
 package com.hackathon.stepDefinitions;
 
+import org.openqa.selenium.WebDriver;
+
 import com.hackathon.factory.helperClass;
+import com.hackathon.pageObjects.BasePage;
 import com.hackathon.pageObjects.carLoanPage;
 import com.hackathon.pageObjects.homeLoanPage;
 
 import io.cucumber.java.en.*;
 
-public class interestAroundYearRegression {
+public class interestAroundYearRegression extends BasePage{
+	public interestAroundYearRegression(WebDriver driver) {
+		super(driver);
+	}
+
 	carLoanPage clp = new carLoanPage(helperClass.getDriver());
 	homeLoanPage hlp = new homeLoanPage(helperClass.getDriver());
 	
 	@Given("user navigate carLoan calculator page")
 	public void user_navigate_car_loan_calculator_page() {
+		
 		clp.originpage();
 	}
 
@@ -73,8 +81,22 @@ public class interestAroundYearRegression {
 
 	@Then("verify all scale are working")
 	public void verify_all_scale_are_working() {
-	    
+	    hlp.verifyAllScale();
 	}
 
+	@Given("user navigate to carloan calculator")
+	public void user_navigate_to_carloan_calculator() {
+	    clp.originpage();
+	}
+
+	@Then("verify emi scheme")
+	public void verify_emi_scheme() {
+	    clp.schemeCheck();
+	}
+
+	@Then("verify emi advance and arrears button")
+	public void verify_emi_advance_and_arrears_button() {
+	    clp.schemeButton();
+	}
 
 }

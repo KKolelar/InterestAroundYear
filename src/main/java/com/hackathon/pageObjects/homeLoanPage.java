@@ -208,6 +208,6 @@ public class homeLoanPage extends BasePage {
 		String value12 = allScale.get(11).getAttribute("value");
 		boolean result6=value11.equals(value12);
 		Assert.assertEquals(result6, false);
-		
+		System.out.println("All Scale working......");
 	}
 }

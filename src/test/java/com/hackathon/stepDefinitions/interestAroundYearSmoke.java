@@ -257,5 +257,39 @@ public class interestAroundYearSmoke {
 	public void verify_pi_char_and_graph_visible() {
 	    hlp.allchart();
 	}
+	@Given("user navigate to loan calculator")
+	public void user_navigate_to_loan_calculator() {
+		ecp.loanCalculator();
+	}
+
+	@When("user enters valid input {string},{string},{string}and{string}")
+	public void user_enters_valid_input_and(String string, String string2, String string3, String string4) {
+	    ecp.loanCalculatorPageAmount(string);
+	    ecp.loanCalculatorPageInterest(string2);
+	    ecp.loanCalculatorTenure(string3);
+	    ecp.loanCalculatorFees(string4);
+	}
+
+	@Then("user verify all Text box")
+	public void user_verify_all_text_box() {
+	    ecp.loanCalculatorAmountBoxCheck();
+	    ecp.loanCalculatorInterestBox();
+	    ecp.loanClaculatorTenureBox();
+	    ecp.loanClaculatorFeeBox();
+	    System.out.println("All text box working...");
+	}
+
+	@Given("user navigate to emi loan calculator")
+	public void user_navigate_to_emi_loan_calculator() {
+	    ecp.loanCalculator();
+	}
+
+	@Then("user verify all Slider")
+	public void user_verify_all_slider() {
+	    ecp.loanCalculatorAmountSliderCheck();
+	    ecp.loanCalculatorInterestSliderCheck();
+	    ecp.loanCalculatorTenureSliderCheck();
+	    ecp.loanCalculatorFeeSliderCheck();
+	}
 
 }

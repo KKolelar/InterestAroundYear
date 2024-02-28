@@ -82,3 +82,18 @@ Feature: Loan Interest Smoke
     Then verify Home Loan Details text box working
     And verify Homeowner Expenses text box working
     And verify pi char and graph visible
+
+  @smoke
+  Scenario Outline: verify loan calculator text box
+    Given user navigate to loan calculator
+    When user enters valid input "<amount>","<interest>","<tenure>"and"<fees>"
+    Then user verify all Text box
+
+    Examples: 
+      | amount | interest | tenure | fees |
+      | 500000 |      9.5 |      1 | 2500 |
+      
+    @smoke
+    Scenario: verify all loan calculator slider
+    	Given user navigate to emi loan calculator
+    	Then user verify all Slider 

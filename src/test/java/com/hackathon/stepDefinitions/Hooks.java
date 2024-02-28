@@ -6,14 +6,10 @@ import java.util.Properties;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.BeforeSuite;
-
 import com.hackathon.factory.helperClass;
 
-import io.cucumber.java.After;
 import io.cucumber.java.AfterAll;
 import io.cucumber.java.AfterStep;
-import io.cucumber.java.Before;
 import io.cucumber.java.BeforeAll;
 import io.cucumber.java.Scenario;
 
@@ -22,7 +18,6 @@ public class Hooks {
 	//static variables to hold Webdriver instance and properties
 	static WebDriver driver;             
 	static Properties p;
-
 	//This method runs before all scenarios
 	@BeforeAll
 	public static void setup() throws IOException {
