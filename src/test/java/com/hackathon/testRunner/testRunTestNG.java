@@ -3,7 +3,7 @@ package com.hackathon.testRunner;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
-@CucumberOptions(features = { ".//Features/interestAmountAroundYearSmoke.feature" }, // providing location of feature file in "features"
+@CucumberOptions(features = { ".//Features/" }, // providing location of feature file in "features"
 		glue = "com.hackathon.stepDefinitions" // specifying stepDefinition package name
 		, plugin = { "pretty", // plugins to generate cucumber report
 				"html:reports/myreport.html", // for cucumber report
