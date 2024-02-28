@@ -2,7 +2,7 @@ package com.hackathon.pageObjects;
 
 import java.util.List;
 
-import org.junit.Assert;
+import org.testng.Assert;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;

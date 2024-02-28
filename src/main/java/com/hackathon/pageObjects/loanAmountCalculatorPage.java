@@ -1,9 +1,10 @@
 package com.hackathon.pageObjects;
 
-import org.junit.Assert;
+
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 
 public class loanAmountCalculatorPage extends emiCalculatorPage {
 
