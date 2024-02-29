@@ -4,13 +4,25 @@
   <test thread-count="2" name="Test1(failed)">
     <parameter name="browser" value="Chrome"/>
     <classes>
-      <class name="com.hackathon.testRunner.testRunTestNG">
+      <class name="com.interestAroundYear.testRunner.testRunTestNG">
         <methods>
           <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="9 10"/>
+          <include name="runScenario" invocation-numbers="0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22"/>
           <include name="tearDownClass"/>
         </methods>
-      </class> <!-- com.hackathon.testRunner.testRunTestNG -->
+      </class> <!-- com.interestAroundYear.testRunner.testRunTestNG -->
     </classes>
   </test> <!-- Test1(failed) -->
+  <test thread-count="2" name="Test2(failed)">
+    <parameter name="browser" value="Edge"/>
+    <classes>
+      <class name="com.interestAroundYear.testRunner.testRunTestNG">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="tearDownClass"/>
+          <include name="runScenario" invocation-numbers="0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22"/>
+        </methods>
+      </class> <!-- com.interestAroundYear.testRunner.testRunTestNG -->
+    </classes>
+  </test> <!-- Test2(failed) -->
 </suite> <!-- Failed suite [Suite] -->

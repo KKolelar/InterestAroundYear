@@ -14,5 +14,5 @@ import io.cucumber.testng.CucumberOptions;
 		monochrome = true)
 
 public class testRunTestNG extends AbstractTestNGCucumberTests {
-
+	
 }

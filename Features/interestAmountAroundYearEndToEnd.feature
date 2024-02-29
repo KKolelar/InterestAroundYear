@@ -1,99 +1,99 @@
 Feature: Interest around the year
 
   @EndToEnd
-  Scenario Outline: Capturing Data from Car Loan 
-    Given user launches the app
-    When user enters loan amount "<amount>"
-    And enters loan interst rate "<interest>"
-    And enters loan term "<tenure>"
-    Then diplay monthly interest and principal amount
-    And the emi is displayed
-    And Total interest payable
-    And Total payable amount
+  Scenario Outline: user retrive monthy principel amount and interest  for Car Loan from emi calculator web application
+    Given user navigate to car loan calculator in emi Web page
+    When user enters loan amount "<amount>" in car loan in emi calculator 
+    And user enters loan interest rate "<interest>" in car loan in emi calculator 
+    And user enters loan tenure "<tenure>" in car loan in emi calculator 
+    Then diplay monthly interest and principal from car loan calculatro
+    And verify monthly emi is displayed in car loan calculator
+    And verify Total interest payable is displayed in car loan calculator
+    And verify Total payable amount is displayed in car loan calculator
 
     Examples: 
       | amount  | interest | tenure |
       | 1500000 |      9.5 |      1 |
 
   @EndToEnd
-  Scenario Outline: Giving input to Home Loan and capturing year to year table
-    Given opens Home loan calculator
-    When user enters Home Value "<homeVale>"
-    And One-time Expenses "<OneTimeExpenses>"
-    And Margin OR Down Payment "<Dp>"
-    And Property Taxes "<Taxes>"
-    And Loan Insurance "<loanInsurance>"
-    And Home Insurance "<homeInsurance>"
-    And Loan Amount
-    And Maintenance Expenses "<maintenance>"
-    And Interest Rate "<interest>"
-    And Loan Tenure "<loanTenure>"
-    And Loan Fees & Charges "<fees>"
-    And Start Month & Year
-    And extract all the data from year on year table & store in excel
+  Scenario Outline: User gives input and retrive year to year table from Home Loan calculater in emi web application
+    Given User navigate to home loan calculator in emi web application
+    When user enters home vale "<homeVale>" in home loan calculator 
+    And user enters One Time Expenses "<OneTimeExpenses>" in home loan calculator 
+    And user enters Down Payment "<DownPayment>" in home loan calculator 
+    And user enters Taxes "<Taxes>" in home loan calculator 
+    And user enters loan Insurance "<loanInsurance>" in home loan calculator 
+    And user enters home Insurance "<homeInsurance>" in home loan calculator 
+    And user enters Loan Amount in home loan calculator
+    And user enters maintenance "<maintenance>" in home loan calculator 
+    And user enters interest "<interest>" in home loan calculator 
+    And user enters loan Tenure "<loanTenure>" in home loan calculator 
+    And user enters Loan fees "<fees>" in home loan calculator 
+    And user enters Start Month & Year in home loan calculator
+    And user enters extract all the data from year on year table & store in excel
 
     Examples: 
-      | homeVale | OneTimeExpenses | Dp | Taxes | loanInsurance | homeInsurance | maintenance | interest | loanTenure | fees |
-      |  4000000 |              20 | 25 |   0.5 |        500000 |          0.05 |        3500 |      9.5 |         15 |    1 |
+      | homeVale | OneTimeExpenses | DownPayment | Taxes | loanInsurance | homeInsurance | maintenance | interest | loanTenure | fees |
+      |  4000000 |              20 |          25 |   0.5 |        500000 |          0.05 |        3500 |      9.5 |         15 |    1 |
 
   @EndToEnd
-  Scenario Outline: UI check in Loan Emi Calculator
-    Given user navigate emi calculator
-    Then verify emi amount text box
-    And emi slider is working
-    When user enter emi amount "<Amount>"
-    Then verify emi interest rate text box
-    And emi interest slider
-    When user enters emi interest rate "<Interest>"
-    Then verify emi tenure text box
-    And emi tenure slider
-    When user enters emi Tenure "<Tenure>"
-    Then verify Fees and Charges text box
-    And emi Fees and Charges slider
-    When user enters emi Fees and Charges "<Fees>"
-    Then verify scale
+  Scenario Outline: UI checks in Loan Emi Calculator in emi web application
+    Given user navigate to emi calculator in loan calculator from emi web application 
+    Then verify amount text box in emi calculator
+    And verify amount slider working in emi calculator
+    When user enter Amount "<Amount>" in emi calculator 
+    Then verify emi interest rate text box in emi calculator
+    And verify interest slider working in emi calculator
+    When user enters Interest "<Interest>" in emi calculator 
+    Then verify tenure text box in emi calculator
+    And verify tenure slider wroking in emi calculator
+    When user enters Tenure "<Tenure>" in emi calculator 
+    Then verify Fees and Charges text box in emi calculator
+    And verify Fees and Charges slider in emi calculator
+    When user enters Fees and Charges "<Fees>" in emi calculator
+    Then verify scale in emi calculator
 
     Examples: 
       | Amount  | Interest | Tenure | Fees  |
       | 1000000 |     11.5 |     15 | 25000 |
 
   @EndToEnd
-  Scenario Outline: UI check in  Loan Amount Calculator
-    Given user navigate to loan emi calculator
-    Then verify loan emi text box
-    And loan emi slider is working
-    When user enter loan emi "<emi>"
-    Then verify loan interest rate text box
-    And loan interest slider
-    When user enters loan interest rate "<Interest>"
-    Then verify loan tenure text box
-    And loan amount calculator tenure slider
-    When user enters loan Tenure "<Tenure>"
-    Then verify loan amount calculator Fees and Charges text box
-    And loan loan amount calculator Fees and Charges slider
-    When user enters loan amount calculator Fees and Charges "<Fees>"
-    Then verify loan amount calculator scale
+  Scenario Outline: UI checks in  Loan Amount Calculator in emi web application
+    Given user navigate to loan Amount calculator in loan calculator from emi web application
+    Then verify loan emi text box in loan amount calculator
+    And verify loan emi slider is working in loan amount calculator
+    When user enter loan emi "<emi>" in loan amount calculator
+    Then verify loan interest rate text box in loan amount calculator
+    And verify loan interest slider is working in loan amount calculator
+    When user enters loan Interest "<Interest>" in loan amount calculator
+    Then verify loan tenure text box in loan amount calculator
+    And verify loan tenure slider is working in loan amount calculator
+    When user enters loan Tenure "<Tenure>" in loan amount calculator
+    Then verify loan Fees and Charges text box in loan amount calculator
+    And verifyloan loan Fees and Charges slider is working in loan amount calculator
+    When user enters loan Fees and Charges "<Fees>" in loan amount calculator
+    Then verify scales in loan amount calculator
 
     Examples: 
       | emi      | Interest | Tenure | Fees  |
       | 11681.90 |     11.5 |     15 | 25000 |
 
   @EndToEnd
-  Scenario Outline: UI check in  Loan Tenure Calculator
-    Given user navigate to loan tenure calculator
-    Then verify tenure loan amount text box
-    And loan tenure calculator amount slider
-    When user enters Tenure loan amount  "<Amount>"
-    Then verify Tenureloan emi text box
-    And Tenureloan emi slider is working
-    When user enter Tenureloan emi "<emi>"
-    Then verify Tenureloan interest rate text box
-    And Tenureloan interest slider
-    When user enters Tenureloan interest rate "<Interest>"
-    Then verify Tenureloan amount calculator Fees and Charges text box
-    And loan Tenure amount calculator Fees and Charges slider
-    When user enters loan Tenure calculator Fees and Charges "<Fees>"
-    Then verify loan Tenure calculator scale
+  Scenario Outline: UI checks in  Loan Tenure Calculator in emi web application
+    Given user navigate to loan tenure calculator in loan calculator from emi web application 
+    Then verify amount text box in loan tenure calculator
+    And verify loan tenure calculator amount slider in loan tenure calculator
+    When user enters loan Amount "<Amount>" in loan tenure calculator 
+    Then verify emi text box in loan tenure calculator
+    And verify emi slider is working in loan tenure calculator
+    When user enter emi "<emi>" in loan tenure calculator
+    Then verify interest rate text box in loan tenure calculator
+    And verify interest slider in loan tenure calculator
+    When user enters Interest "<Interest>" rate in loan tenure calculator 
+    Then verify Fees and Charges text box in loan tenure calculator
+    And verify Fees and Charges slider in loan tenure calculator
+    When user enters Fees and Charges "<Fees>" in loan tenure calculator 
+    Then verify loan Tenure calculator scale in loan tenure calculator
 
     Examples: 
       | emi      | Interest | Amount  | Fees  |

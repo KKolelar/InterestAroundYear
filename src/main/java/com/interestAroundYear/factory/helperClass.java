@@ -7,8 +7,6 @@ import java.time.Duration;
 import java.util.Base64;
 import java.util.Properties;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -36,7 +34,7 @@ static Properties p;
 			} else {
 			    System.out.println("No matching OS..");
 			      }
-			//browser
+			//browser getProperties().getProperty("browser")
 			switch (getProperties().getProperty("browser").toLowerCase()) {
 			    case "chrome":
 			        capabilities.setBrowserName("chrome");

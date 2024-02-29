@@ -6,8 +6,6 @@ import java.util.Properties;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.Parameters;
-
 import com.interestAroundYear.factory.helperClass;
 
 import io.cucumber.java.*;
@@ -20,7 +18,7 @@ public class Hooks {
 	static Properties p;
 	//This method runs before all scenarios
 	@BeforeAll
-	@Parameters("browser") 
+	//@Parameters({"browser"}) 
 	public static void setup() throws IOException {
 		driver = helperClass.initializeBrowser();         //calling the initilizeBrowser method from BaseClass and storing it in driver or Initialize webdriver instance
 		p = helperClass.getProperties();       		   //calling the getProperties method from BaseClass and storing it in "p"   or Get properties for configuration      
@@ -42,6 +40,7 @@ public class Hooks {
 	//This method runs after each step in a scenario
 	@AfterStep
 	public void addScreenshot(Scenario scenario) {
+		driver=helperClass.getDriver();
 		// this is for cucumber junit report
 		if (!scenario.isFailed()) {
 			TakesScreenshot ts = (TakesScreenshot) driver;

@@ -57,7 +57,14 @@ public class interestAroundYearRegression{
 	    clp.originpage();
 	    clp.carClick();
 	}
-
+	
+	@When("user enters valid data")
+	public void user_enters_valid_data() {
+		clp.enterLoanAmount("750000");
+	    clp.interestRate("7.75");
+	    clp.loanTenure("5");
+	}
+	
 	@Then("verify pi chart available")
 	public void verify_pi_chart_available() {
 	    clp.verifyPiChart();

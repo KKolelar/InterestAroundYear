@@ -22,7 +22,7 @@ public class carLoanPage extends BasePage{
 	String valueBefore;
 	String valueAfter;
 	
-	@FindBy(xpath="//*[normalize-space()='Car Loan']")
+	@FindBy(id="car-loan")
 	WebElement carLoan;
 	
 	@FindBy(id ="personal-loan")

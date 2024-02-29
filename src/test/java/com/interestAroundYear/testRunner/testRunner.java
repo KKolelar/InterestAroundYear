@@ -7,7 +7,7 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features= {".//Features/"},
-							glue="com.hackathon.stepDefinitions",
+							glue="com.interestAroundYear.stepDefinitions",
 							plugin = { "pretty",
 									"html:reports/myreport.html",
 									"rerun:target/rerun.txt",
