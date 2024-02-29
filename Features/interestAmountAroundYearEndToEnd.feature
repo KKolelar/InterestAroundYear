@@ -1,7 +1,7 @@
 Feature: Interest around the year
 
   @EndToEnd
-  Scenario Outline: Car Loan
+  Scenario Outline: Capturing Data from Car Loan 
     Given user launches the app
     When user enters loan amount "<amount>"
     And enters loan interst rate "<interest>"
@@ -16,7 +16,7 @@ Feature: Interest around the year
       | 1500000 |      9.5 |      1 |
 
   @EndToEnd
-  Scenario Outline: Home Loan
+  Scenario Outline: Giving input to Home Loan and capturing year to year table
     Given opens Home loan calculator
     When user enters Home Value "<homeVale>"
     And One-time Expenses "<OneTimeExpenses>"
@@ -37,7 +37,7 @@ Feature: Interest around the year
       |  4000000 |              20 | 25 |   0.5 |        500000 |          0.05 |        3500 |      9.5 |         15 |    1 |
 
   @EndToEnd
-  Scenario Outline: Emi Calculator
+  Scenario Outline: UI check in Loan Emi Calculator
     Given user navigate emi calculator
     Then verify emi amount text box
     And emi slider is working
@@ -58,7 +58,7 @@ Feature: Interest around the year
       | 1000000 |     11.5 |     15 | 25000 |
 
   @EndToEnd
-  Scenario Outline: Loan Amount Calculator
+  Scenario Outline: UI check in  Loan Amount Calculator
     Given user navigate to loan emi calculator
     Then verify loan emi text box
     And loan emi slider is working
@@ -79,7 +79,7 @@ Feature: Interest around the year
       | 11681.90 |     11.5 |     15 | 25000 |
 
   @EndToEnd
-  Scenario Outline: Loan Tenure Calculator
+  Scenario Outline: UI check in  Loan Tenure Calculator
     Given user navigate to loan tenure calculator
     Then verify tenure loan amount text box
     And loan tenure calculator amount slider
