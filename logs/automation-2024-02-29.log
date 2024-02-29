@@ -1,35 +1,37 @@
-17:36:09.417 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Emi slider in loan calculator verified
-17:36:10.246 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Emi vale entered in emi loan calculator
-17:36:10.677 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Interest rate text box in emi loan calculator verified
-17:36:12.377 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Emi loan calculator interest slider verified
-17:36:13.023 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Interest vale entered in emi loan calculator
-17:36:13.339 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Tenure text box in emi loan calculator verified
-17:36:14.426 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Emi loan calculator tenure slider verified
-17:36:14.913 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Tenure vale entered in emi loan calculator
-17:36:15.255 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Fees and Charges text box in emi loan calculator verified
-17:36:16.469 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Emi loan calculator fees and charges slider verified
-17:36:17.391 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Fees and Charges vale entered in emi loan calculator
-17:36:18.028 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Emi loan calculator Scale verified
-17:36:19.675 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Navigated to the emi loan calculator
-17:36:20.161 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Emi text box in loan amount calculator verified
-17:36:21.242 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Loan amount calculator emi slider verified
-17:36:21.779 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Emi value entered in loan amount calculator
-17:36:22.143 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Interest rate text box in loan amount calculator verified
-17:36:23.125 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Loan amount calculator interest slider verified
-17:36:23.761 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Interest rate value entered in loan amount calculator
-17:36:24.032 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Tenure text box in loan amount calculator verified
-17:36:25.027 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Loan amount calculator tenure slider verified
-17:36:25.482 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Tenure value entered in loan amount calculator
-17:36:25.765 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Fees and Charges text box in loan amount calculator verified
-17:36:26.685 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Loan amount calculator fees and charges slider verified
-17:36:27.210 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Fees and Charges value entered in loan amount calculator
-17:36:27.788 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Loan Amount loan calculator Scale verified
-17:36:30.314 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Navigated to the Tenure loan calculator
-17:36:30.589 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Loan Amount text box in loan tenure calculator verified
-17:36:31.370 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Loan tenure calculator amount slider verified
-17:36:31.704 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Loan amount value entered in loan tenure calculator
-17:36:31.910 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Loan emi text box in loan tenure calculator verified
-17:36:32.681 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Loan tenure calculator emi slider verified
-17:36:32.992 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Loan emi value entered in loan tenure calculator
-17:36:33.182 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Interest rate text box in loan tenure calculator verified
-17:36:34.066 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Loan tenure calculator interest slider verified
+22:23:32.495 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - user enter home loan down payment
+22:23:32.828 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - user enter property taxes
+22:23:33.134 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - user enter home loan insurance
+22:23:33.419 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - user enter home insurance
+22:23:33.508 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - user enter home loan amount
+22:23:33.685 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - user enter home maintanance charges
+22:23:33.947 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Home loan interest rate filled
+22:23:34.202 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Home loan tenure filled
+22:23:34.428 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Home loan fees and charges filled
+22:23:34.681 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - loan stast month selected
+22:23:44.654 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Emi year to year table is stored to excel sheet
+22:23:45.608 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Navigated to emi calculator
+22:23:45.648 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Emi text box verified
+22:23:46.296 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Emi slider in loan calculator verified
+22:23:46.489 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Emi vale entered in emi loan calculator
+22:23:46.525 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Interest rate text box in emi loan calculator verified
+22:23:47.124 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Emi loan calculator interest slider verified
+22:23:47.266 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Interest vale entered in emi loan calculator
+22:23:47.296 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Tenure text box in emi loan calculator verified
+22:23:47.899 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Emi loan calculator tenure slider verified
+22:23:48.046 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Tenure vale entered in emi loan calculator
+22:23:48.111 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Fees and Charges text box in emi loan calculator verified
+22:23:48.659 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Emi loan calculator fees and charges slider verified
+22:23:48.875 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Fees and Charges vale entered in emi loan calculator
+22:23:49.136 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Emi loan calculator Scale verified
+22:23:49.926 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Navigated to the emi loan calculator
+22:23:50.017 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Emi text box in loan amount calculator verified
+22:23:50.558 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Loan amount calculator emi slider verified
+22:23:50.693 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Emi value entered in loan amount calculator
+22:23:50.716 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Interest rate text box in loan amount calculator verified
+22:23:51.369 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Loan amount calculator interest slider verified
+22:23:51.511 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Interest rate value entered in loan amount calculator
+22:23:51.533 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Tenure text box in loan amount calculator verified
+22:23:52.092 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Loan amount calculator tenure slider verified
+22:23:52.228 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Tenure value entered in loan amount calculator
+22:23:52.279 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Fees and Charges text box in loan amount calculator verified
+22:23:52.840 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Loan amount calculator fees and charges slider verified

@@ -7,10 +7,10 @@
       <class name="com.interestAroundYear.testRunner.testRunTestNG"/>
     </classes>
   </test> 
- <!--<test  name="Test2">
+  <test  name="Test2">
    <parameter name="browser" value="Edge"/> 
   <classes>
       <class name="com.interestAroundYear.testRunner.testRunTestNG"/>
     </classes>
-  </test>-->
+  </test>
 </suite> <!-- Suite -->

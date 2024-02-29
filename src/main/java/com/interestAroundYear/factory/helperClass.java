@@ -34,7 +34,7 @@ static Properties p;
 			} else {
 			    System.out.println("No matching OS..");
 			      }
-			//browser getProperties().getProperty("browser")
+			//browser
 			switch (getProperties().getProperty("browser").toLowerCase()) {
 			    case "chrome":
 			        capabilities.setBrowserName("chrome");

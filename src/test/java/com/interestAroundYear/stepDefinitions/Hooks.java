@@ -6,6 +6,9 @@ import java.util.Properties;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.*;
+//import org.testng.annotations.Parameters;
+
 import com.interestAroundYear.factory.helperClass;
 
 import io.cucumber.java.*;
@@ -38,7 +41,7 @@ public class Hooks {
 
 	
 	//This method runs after each step in a scenario
-	@AfterStep
+	@After
 	public void addScreenshot(Scenario scenario) {
 		driver=helperClass.getDriver();
 		// this is for cucumber junit report
