@@ -1,16 +1,32 @@
-22:23:53.059 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Fees and Charges value entered in loan amount calculator
-22:23:53.329 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Loan Amount loan calculator Scale verified
-22:23:54.103 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Navigated to the Tenure loan calculator
-22:23:54.195 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Loan Amount text box in loan tenure calculator verified
-22:23:54.730 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Loan tenure calculator amount slider verified
-22:23:54.876 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Loan amount value entered in loan tenure calculator
-22:23:54.899 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Loan emi text box in loan tenure calculator verified
-22:23:55.564 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Loan tenure calculator emi slider verified
-22:23:55.711 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Loan emi value entered in loan tenure calculator
-22:23:55.734 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Interest rate text box in loan tenure calculator verified
-22:23:56.319 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Loan tenure calculator interest slider verified
-22:23:56.445 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Loan interest value entered in loan tenure calculator
-22:23:56.501 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Fees and Charges text box in loan tenure calculator verified
-22:23:57.067 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Loan tenure calculator fees and charges slider verified
-22:23:57.204 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - Loan Fees and Charges value entered in loan tenure calculator
-22:23:57.206 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_EndToEnd - **** End of End to End
+11:11:55.649 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_smoke - Entered interest value in car loan calculator
+11:11:55.980 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_smoke - Verified interest slider in car loan calculator 
+11:11:56.798 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_smoke - Entered tenure value in car loan calculator
+11:11:57.075 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_smoke - Verified tenure slider in car loan calculator
+11:11:57.448 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_smoke - Navigated to car loan calculator in emi web application
+11:11:59.079 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_smoke - Entered all required vale in car loan calculator
+11:11:59.715 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_smoke - Verified scale in car loan calculator
+11:12:00.135 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_smoke - Navigated to car loan calculator in emi web application
+11:12:00.550 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_smoke - Entered loan amount in car loan calculator
+11:12:01.134 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_smoke - Entered inerest value is car loan calculator
+11:12:01.651 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_smoke - Entered tenure value in car loan calculator
+11:12:01.985 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_smoke - Verified Monthly emi is displayed in car loan calculator
+11:12:02.422 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_smoke - Verifeid Tatal interest is displayed in car loan calculator
+11:12:02.776 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_smoke - Verifeid Tatal payable is displayed in car loan calculator
+11:12:03.054 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_smoke - Navigated to car loan calculator in emi web application
+11:12:04.518 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_smoke - Entered all required vale in car loan calculator
+11:12:04.913 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_smoke - Verified yera to year table displayed in car loan calculator
+11:12:05.264 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_smoke - Navigated to car loan calculator in emi web application
+11:12:06.638 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_smoke - Entered all required value in car loan calculator
+11:12:07.050 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_smoke - Entered invalid data in car loan calculator
+11:12:08.418 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_smoke - Navigated to car loan calculator in emi web application
+11:12:09.095 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_smoke - Verified all element present in Calculator drop down menu
+11:12:11.694 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_smoke - Navigated to Home loan calculator in emi web application
+11:12:12.659 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_smoke - Verified all home loan detail text box in home loan calculator
+11:12:13.037 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_smoke - Verified all home owner expenses text box in home loan calculator
+11:12:13.418 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_smoke - Verified pi chart and graph visible in home loan calculator
+11:12:14.683 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_smoke - Naigated to emi calculator in emi web application
+11:12:16.317 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_smoke - Entered all value in emi calculator
+11:12:16.850 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_smoke - verified all text box in emi calculator
+11:12:18.649 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_smoke - Naigated to emi calculator in emi web application
+11:12:22.029 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_smoke - verified all slider in emi calculator
+11:12:22.030 [main] INFO  com.interestAroundYear.stepDefinitions.interestAroundYear_smoke - **** End of all smoke scenario ****

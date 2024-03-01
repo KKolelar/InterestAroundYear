@@ -1,6 +1,18 @@
 package com.interestAroundYear.testRunner;
 
-import org.junit.runner.RunWith;
+
+
+import java.io.IOException;
+import java.util.Properties;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
+
+import com.interestAroundYear.factory.helperClass;
 
 //import io.cucumber.junit.Cucumber;
 
@@ -18,5 +30,22 @@ import io.cucumber.testng.CucumberOptions;
 		monochrome = true)
 
 public class testRunTestNG extends AbstractTestNGCucumberTests {
+	//static variables to hold Webdriver instance and properties
+		static WebDriver driver;
+		static Properties p;
+		@BeforeTest
+		@Parameters({"browser"})
+		public void setup(String browser) throws IOException{
 
+			driver = helperClass.initializeBrowser(browser);		//calling the initializeBrowser method of baseClass to get the driver
+			p = helperClass.getProperties();				//calling the getProperties method of baseClass
+			driver.manage().window().maximize();		//Maximizing the browser window 
+			driver.get("https://emicalculator.net/");//navigating to the appUrl
+		}
+		@AfterTest
+		public void tearDown() {
+			if(driver!=null) {
+				driver.quit();	//closing the browser
+			}
+		}
 }

@@ -13,14 +13,14 @@ Feature: Loan Interest Smoke
   @smoke
   Scenario: verify all type of loan calculator in emi calculator
     Given user navigates to loan calculator in Emi web application
-    When user clicks emi calculator
-    Then verify emi calculator opens
-    When user clicks loan amount calculator
-    Then verify loan amount calculator opens
-    When user clicks loan Tenure calculator
-    Then verify loan Tenure calculator opens
-    When user clicks interest rate calculator
-    Then verify interest rate calculator opens
+    When user clicks emi calculator in loan calculator
+    Then verify emi calculator opend in loan calculator
+    When user clicks loan amount calculator in loan calculator
+    Then verify loan amount calculator opend in loan calculator
+    When user clicks loan Tenure calculator in loan calculator
+    Then verify loan Tenure calculator opend in loan calculator
+    When user clicks interest rate calculator in loan calculator
+    Then verify interest rate calculator opend in loan calculator
 
   @smoke
   Scenario: verify text boxs in car loan calculator in emi calculator

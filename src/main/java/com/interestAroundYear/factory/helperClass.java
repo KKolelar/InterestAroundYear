@@ -20,7 +20,7 @@ static WebDriver driver;
 static Properties p;
 
  
-	public  static WebDriver initializeBrowser() throws IOException
+	public  static WebDriver initializeBrowser(String browser) throws IOException
 	{
 		//code to initialize the browser
 		if(getProperties().getProperty("execution_env").equalsIgnoreCase("remote"))
@@ -35,7 +35,7 @@ static Properties p;
 			    System.out.println("No matching OS..");
 			      }
 			//browser
-			switch (getProperties().getProperty("browser").toLowerCase()) {
+			switch (browser.toLowerCase()) {
 			    case "chrome":
 			        capabilities.setBrowserName("chrome");
 			        break;
@@ -49,7 +49,7 @@ static Properties p;
 		}
 		else if(getProperties().getProperty("execution_env").equalsIgnoreCase("local"))
 			{
-				switch(getProperties().getProperty("browser").toLowerCase()) 
+				switch(browser.toLowerCase()) 
 				{
 				case "chrome":
 			        driver=new ChromeDriver();
@@ -65,6 +65,50 @@ static Properties p;
 		 driver.manage().deleteAllCookies(); 
 		 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		 return driver;					   //returning the driver
+		
+//		if(os.equalsIgnoreCase("remote")) {
+//			DesiredCapabilities capabalities = new DesiredCapabilities();
+//			//os
+//			if(os.equalsIgnoreCase("windows")) {
+//				capabalities.setPlatform(Platform.WIN11);
+//			}
+//			else if (os.equalsIgnoreCase("mac")) {
+//				capabalities.setPlatform(Platform.MAC);
+//			}
+//			else {
+//				System.out.println("no matching os .....");
+//				return null;
+//			}
+//			//browser
+//			if(browser.equalsIgnoreCase("chrome")) {
+//				capabalities.setBrowserName("chrome");
+//			}
+//			else if(browser.equalsIgnoreCase("edge")) {
+//				capabalities.setBrowserName("MicrosoftEdge");
+//			}
+//			else {
+//				System.out.println("no matching browser .....");
+//				return null;
+//			}
+// 
+//			 driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub") , capabalities);
+//		}
+//		else if(os.equalsIgnoreCase("local")) {
+//			if(browser.equalsIgnoreCase("chrome")) {
+//				driver = new ChromeDriver();
+//			}
+//			else if(browser.equalsIgnoreCase("edge")){
+//				driver = new EdgeDriver();
+//			}
+//			else {
+//				System.out.println("No matching browser..........");
+//			}
+//		}
+//
+// 
+//		 driver.manage().deleteAllCookies(); 
+//		 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+//		 return driver;
 	}
 	
 	
