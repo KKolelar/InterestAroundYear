@@ -66,49 +66,6 @@ static Properties p;
 		 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		 return driver;					   //returning the driver
 		
-//		if(os.equalsIgnoreCase("remote")) {
-//			DesiredCapabilities capabalities = new DesiredCapabilities();
-//			//os
-//			if(os.equalsIgnoreCase("windows")) {
-//				capabalities.setPlatform(Platform.WIN11);
-//			}
-//			else if (os.equalsIgnoreCase("mac")) {
-//				capabalities.setPlatform(Platform.MAC);
-//			}
-//			else {
-//				System.out.println("no matching os .....");
-//				return null;
-//			}
-//			//browser
-//			if(browser.equalsIgnoreCase("chrome")) {
-//				capabalities.setBrowserName("chrome");
-//			}
-//			else if(browser.equalsIgnoreCase("edge")) {
-//				capabalities.setBrowserName("MicrosoftEdge");
-//			}
-//			else {
-//				System.out.println("no matching browser .....");
-//				return null;
-//			}
-// 
-//			 driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub") , capabalities);
-//		}
-//		else if(os.equalsIgnoreCase("local")) {
-//			if(browser.equalsIgnoreCase("chrome")) {
-//				driver = new ChromeDriver();
-//			}
-//			else if(browser.equalsIgnoreCase("edge")){
-//				driver = new EdgeDriver();
-//			}
-//			else {
-//				System.out.println("No matching browser..........");
-//			}
-//		}
-//
-// 
-//		 driver.manage().deleteAllCookies(); 
-//		 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-//		 return driver;
 	}
 	
 	

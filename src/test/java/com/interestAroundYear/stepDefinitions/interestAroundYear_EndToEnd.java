@@ -260,7 +260,7 @@ public class interestAroundYear_EndToEnd {
 
 	@When("user enter loan emi {string} in loan amount calculator")
 	public void user_enter_loan_emi_in_loan_amount_calculator(String string) {
-		lacp.loanCalculatorAmount(string);
+		lacp.loanCalculatorEmi(string);
 		logger.info("Emi value entered in loan amount calculator");
 	}
 

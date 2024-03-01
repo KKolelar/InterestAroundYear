@@ -1,7 +1,6 @@
 package com.interestAroundYear.testRunner;
 
 
-
 import java.io.IOException;
 import java.util.Properties;
 
@@ -19,7 +18,6 @@ import com.interestAroundYear.factory.helperClass;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
-//@RunWith(Cucumber.class)
 @CucumberOptions(features = { ".//Features/" }, // providing location of feature file in "features"
 		glue = "com.interestAroundYear.stepDefinitions" // specifying stepDefinition package name
 		, plugin = { "pretty", // plugins to generate cucumber report

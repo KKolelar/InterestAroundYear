@@ -77,59 +77,71 @@ public class homeLoanPage extends BasePage {
 	@FindBy(xpath = "//*[@class='btn-group btn-group-toggle']/label")
 	List<WebElement> allScale;
 	
+	//Navigating to emi web application home page to home loan calculator
 	public void homeLoanCalculator() {
 		calculator.click();
 		homeLoan.click();
 	}
-	
+	//Entering value in home value text box in home loan calculator
 	public void homeAmount(String Amount) {
 		homePrice.sendKeys(Keys.chord(Keys.CONTROL,"a", Keys.DELETE));
 		homePrice.sendKeys(Amount);
 	}
+	//Entering value in one time expence text box in home loan calculator
 	public void oneTimeExpence(String oneTime) {
 		homeOneTimeExpence.sendKeys(Keys.chord(Keys.CONTROL,"a", Keys.DELETE));
 		homeOneTimeExpence.sendKeys(oneTime);
 	}
+	//Entering value in down Payment text box in home loan calculator
 	public void downPayment(String Dp) {
 		homeDownPayment.sendKeys(Keys.chord(Keys.CONTROL,"a", Keys.DELETE));
 		homeDownPayment.sendKeys(Dp);
 	}
-	//sendKeys(Keys.chord(Keys.CONTROL,"a", Keys.DELETE));
+	//Entering value in property Taxes text box in home loan calculator
 	public void propertyTaxes(String taxes) {
 		homePropertytaxes.sendKeys(Keys.chord(Keys.CONTROL,"a", Keys.DELETE));
 		homePropertytaxes.sendKeys(taxes);
 	}
+	//Entering value in home Loan Insurance Amount text box in home loan calculator
 	public void homeLoanInsuranceAmount(String insurance) {
 		homeloaninsuranceamount.sendKeys(Keys.chord(Keys.CONTROL,"a", Keys.DELETE));
 		homeloaninsuranceamount.sendKeys(insurance);
 	}
+	//Entering value in home Insurance text box in home loan calculator
 	public void homeInsurance(String home) {
 		homeinsurance.sendKeys(Keys.chord(Keys.CONTROL,"a", Keys.DELETE));
 		homeinsurance.sendKeys(home);
 	}
+	//Clicking on home loan amount text box
 	public void homeLoanAmount() {
 		homeloanamount.click();
 	}
+	//Entering value in maintenance Expenses text box in home loan calculator
 	public void maintenanceExpenses(String maintenance) {
 		maintenanceexpenses.sendKeys(Keys.chord(Keys.CONTROL,"a", Keys.DELETE));
 		maintenanceexpenses.sendKeys(maintenance);
 	}
+	//Entering value in home Loan Interest text box in home loan calculator
 	public void homeLoanInterest(String interest) {
 		homeloaninterest.sendKeys(Keys.chord(Keys.CONTROL,"a", Keys.DELETE));
 		homeloaninterest.sendKeys(interest);
 	}
+	//Entering value in home Loan Term text box in home loan calculator
 	public void homeLoanTerm(String term) {
 		homeloanterm.sendKeys(Keys.chord(Keys.CONTROL,"a", Keys.DELETE));
 		homeloanterm.sendKeys(term);
 	}
+	//Entering value in home loan Fees text box in home loan calculator
 	public void loanFees(String fees) {
 		homeLoanfees.sendKeys(Keys.chord(Keys.CONTROL,"a", Keys.DELETE));
 		homeLoanfees.sendKeys(fees);
 	}
+	//Clicking on starting month in calendar tab in home loan calculator
 	public void selectMonth() {
 		homeStartmonthyear.click();
 		homeFebMonth.click();
 	}
+	//Fetching year to year data table and writing in excel
 	public void writeExcelSheet() throws IOException {
 		int a=0;
 		for(int i =1; i<HomeExcelRow.size()+1;i++) {
@@ -140,6 +152,7 @@ public class homeLoanPage extends BasePage {
 			}
 		}
 	}
+	//Verifying all Home Loan text box in home loan calculator
 	public void allHomeLoanTextBox() {
 		boolean text1= homePrice.isEnabled();
 		Assert.assertEquals(text1, true);
@@ -159,6 +172,7 @@ public class homeLoanPage extends BasePage {
 		Assert.assertEquals(text8, true);
 		System.out.println("All Text box working...........");
 	}
+	//Verifying all Home owner Expenses text box in home loan calculator
 	public void allHomeownerExpensesTextBox(){
 		boolean text1= homeOneTimeExpence.isEnabled();
 		Assert.assertEquals(text1, true);
@@ -170,6 +184,7 @@ public class homeLoanPage extends BasePage {
 		Assert.assertEquals(text4, true);
 		System.out.println("All HomeownerExpenses Text Box Working..........");
 	}
+	//Verifying all chart in home loan calculator
 	public void allchart() {
 		boolean text1= chart.get(0).isDisplayed();
 		Assert.assertEquals(text1, true);
@@ -177,6 +192,7 @@ public class homeLoanPage extends BasePage {
 		Assert.assertEquals(text2, true);
 		System.out.println("Both chart present");
 	}
+	//Verifying all scale in home loan calculator
 	public void verifyAllScale() {
 		String value1 = homeDownPayment.getAttribute("value");
 		allScale.get(1).click();

@@ -105,7 +105,7 @@ public class emiCalculatorPage extends BasePage {
 		Assert.assertEquals(true, loanCalculator);
 		System.out.println("Loan Amount Text box working");
 	}
-	
+	//Verifying loan amount slider in loan calculator
 	public void loanCalculatorAmountSliderCheck() {
 		String amount1=loanCalculatorAmount.getAttribute("value");
 		act.dragAndDropBy(loanCalculatorAmountSlider, 10, 0).build().perform();
@@ -114,16 +114,18 @@ public class emiCalculatorPage extends BasePage {
 		Assert.assertEquals(false, amount);
 		System.out.println("Loan Amount slider working........... ");
 	}
+	//Entering loan amount in loan amount calculator
 	public void loanCalculatorPageAmount(String amount1) {
 		loanCalculatorAmount.sendKeys(Keys.chord(Keys.CONTROL,"a", Keys.DELETE));
 		loanCalculatorAmount.sendKeys(amount1);
 	}
+	//Verifying interest text box in loan calculator
 	public void loanCalculatorInterestBox() {
 		boolean loanCalculator= loanCalculatorInterest.isEnabled();
 		Assert.assertEquals(true, loanCalculator);
 		System.out.println("Loan Interest Text box working");
 	}
-	
+	//Verifying loan interest slider in loan calculator
 	public void loanCalculatorInterestSliderCheck() {
 		String amount1=loanCalculatorInterest.getAttribute("value");
 		act.dragAndDropBy(loanCalculatorInterestSlider, 10, 0).build().perform();
@@ -132,17 +134,18 @@ public class emiCalculatorPage extends BasePage {
 		Assert.assertEquals(false, amount);
 		System.out.println("Loan Interest slider working........... ");
 	}
-	
+	//Entering loan interest in loan amount calculator
 	public void loanCalculatorPageInterest(String interest1) {
 		loanCalculatorInterest.sendKeys(Keys.chord(Keys.CONTROL,"a", Keys.DELETE));
 		loanCalculatorInterest.sendKeys(interest1);
 	}
+	//Verifying Tenure text box in loan calculator
 	public void loanClaculatorTenureBox() {
 		boolean loanCalculator= loanCalculatorTerm.isEnabled();
 		Assert.assertEquals(true, loanCalculator);
 		System.out.println("Loan Tenure Text box working");
 	}
-	
+	//Verifying loan Tenure slider in loan calculator
 	public void loanCalculatorTenureSliderCheck() {
 		String amount1=loanCalculatorTerm.getAttribute("value");
 		act.dragAndDropBy(loanCalculatorTermSlider, 10, 0).build().perform();
@@ -151,10 +154,12 @@ public class emiCalculatorPage extends BasePage {
 		Assert.assertEquals(false, amount);
 		System.out.println("Loan Tenure slider working........... ");
 	}
+	//Entering loan Tenure in loan amount calculator
 	public void loanCalculatorTenure(String tenure) {
 		loanCalculatorTerm.sendKeys(Keys.chord(Keys.CONTROL,"a", Keys.DELETE));
 		loanCalculatorTerm.sendKeys(tenure);
 	}
+	//Verifying fees text box in loan calculator
 	public void loanClaculatorFeeBox() {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].scrollIntoView();", loanCalculatorSliderFees);
@@ -162,7 +167,7 @@ public class emiCalculatorPage extends BasePage {
 		Assert.assertEquals(true, loanCalculator);
 		System.out.println("Loan Fees & Charges Text box working");
 	}
-	
+	//Verifying fees slider in loan calculator
 	public void loanCalculatorFeeSliderCheck() {
 		String amount1=loanCalculatorFees.getAttribute("value");
 		act.dragAndDropBy(loanCalculatorSliderFees, 10, 0).build().perform();
@@ -171,13 +176,16 @@ public class emiCalculatorPage extends BasePage {
 		Assert.assertEquals(false, amount);
 		System.out.println("Loan Fees & Charges slider working........... ");
 	}
+	//Entering loan fees in loan amount calculator
 	public void loanCalculatorFees(String fees1) {
 		loanCalculatorFees.sendKeys(Keys.chord(Keys.CONTROL,"a", Keys.DELETE));
 		loanCalculatorFees.sendKeys(fees1);
 	}
+	//clicking on emi scheme button
 	public void emiSchemeClick() {
 		loanCalculatorScheme.click();
 	}
+	//clicked on month scale in emi calculator in loan calculator
 	public void scaleCheck() {
 		String monthlyEmi1=emiCalculatorMonthlyEmi.getText();
 		String monthlyTotalEmi1=emiCalculatorTotalemi.getText();
@@ -188,39 +196,48 @@ public class emiCalculatorPage extends BasePage {
 		Assert.assertEquals(monthlyTotalEmi1, monthlyTotalEmi2);
 		System.out.println("Emi calculator scale check");
 	}
+	//Verifying DropDown menu available in emi web application 
 	public void checkDropDown() {
 		calculator.click();
 		boolean drop=emiCalculator.isDisplayed();
 		Assert.assertEquals(drop, true);
 		System.out.println("Drop down working");
 	}
+	//clicking on emi loan calculator in loan calculator
 	public void clickEmiCalculator() {
 		emiLoanCalculator.click();
 	}
+	//Clicking on loan amount calculator in loan calculator
 	public void clickLoanAmountCalculator() {
 		loanAmountCalculator.click();
 	}
+	//clicking on loan tenure calculator in loan calculator
 	public void clickLoanTenurCalculator() {
 		tenureLoanCalculator.click();
 	}
+	//clicking on interest rate calculator in loan calculator
 	public void clickInterestRateCalculator() {
 		interestRateLoanCalculator.click();
 	}
+	//Verifying user navigated to emi calculator in loan calculator 
 	public void checkEmiCalculator() {
 		String calName=allCalText.get(1).getText();
 		Assert.assertEquals(calName, "Loan EMI");
 		System.out.println("Opened Emi calculator");
 	}
+	//Verifying user navigated to loan amount calculator in loan calculator
 	public void checkLoanAmountCalculator() {
 		String calName=allCalText.get(0).getText();
 		Assert.assertEquals(calName, "Principal Loan Amount");
 		System.out.println("Opened Emi calculator");
 	}
+	//Verifying user navigated to loan tenure calculator in loan calculator
 	public void checkLoanTenureCalculator() {
 		String calName=allCalText.get(2).getText();
 		Assert.assertEquals(calName, "Loan Tenure");
 		System.out.println("Opened Emi calculator");
 	}
+	//Verifying user navigated to interest rate calculator in loan calculator
 	public void checkInterestRateCalculator() {
 		String calName=allCalText.get(3).getText();
 		Assert.assertEquals(calName, "Loan Interest Rate");
